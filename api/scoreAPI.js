@@ -761,8 +761,7 @@ router.get('/health', (req, res) => {
     timestamp: new Date().toISOString(),
     database: {
       database: DB_CONFIG.database,
-      host: DB_CONFIG.host,
-      port: DB_CONFIG.port
+      
     },
     batchProcessor: {
       pendingBatches: batchStatus.pendingBatches.length,
